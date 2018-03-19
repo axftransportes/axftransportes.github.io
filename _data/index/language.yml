@@ -5,7 +5,7 @@
 # - locale: zh
   # flag: /static/assets/img/flags/China.png
  - locale: es
-     flag: /static/assets/img/flags/Spain.png
+   flag: /static/assets/img/flags/Spain.png
 
  - locale: en
-     flag: /static/assets/img/flags/United-States.png
+   flag: /static/assets/img/flags/United-States.png
