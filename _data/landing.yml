@@ -12,10 +12,10 @@
 #   tpl: career.html
 #   css: timeline
 
-- id: service
-  i18n: nav.service
-  name: Service
-  tpl: service.html
+- id: services
+  i18n: nav.services
+  name: Services
+  tpl: services.html
   css: timeline
 
 # - id: skills
