@@ -41,6 +41,22 @@ h3, h4, h5 {
   font-weight: 600;
 }
 
+.phone {
+  display: inline;
+  color: #a7b1c2;
+  font-weight: 600;
+  padding: 14px 50px 14px 25px;
+}
+
+#phone::before {
+    content: "\f095";
+    font-weight: normal;
+    text-decoration: inherit;
+    font-size: 18px;
+    position: absolute;
+}
+
+
 .nav {
   > li > a {
     color: #a7b1c2;
