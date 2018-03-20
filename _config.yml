@@ -2,6 +2,7 @@
 
 # Website settings
 title: AXF TRANSPORTES
+phone: +56 9 94062006
 description: page for a transport company.
 keywords: AXF,TRANSPORTES,Alex,Ascencio,melipilla,truck, camiones
 # baseurl:  /axftransportes.github.io # if you have suburl as homepage like '/homepage', please change it to '/homepage' and your repo's name should be 'homepage'
@@ -11,9 +12,9 @@ img_path: /Jalpc/static/assets/img/blog  # url should be '/homepage/static/asset
 
 # author -- index page "about me" section
 author:  # change following line to your infomation.
-  name: Pablo Munoz  # Be used at blog posts' author.
-  first_name: Pablo  # Be used at index page about me section.
-  last_name: Munoz  # Be used at index page about me section.
+  name: AXF Transportes # Be used at blog posts' author.
+  first_name: AXF  # Be used at index page about me section.
+  last_name: Transportes  # Be used at index page about me section.
   avatar: /static/assets/img/landing/avatar.jpg  # upload your avatar at directory and edit it.
 # github_username: jarrekk  # Leave blank if you don't have now
 # linkedin_id: jarrekk # Leave blank if you don't have now
@@ -28,7 +29,7 @@ author:  # change following line to your infomation.
   skill_icon2:
     - name: fa-linux
     - name: icon-apache
-  desc: Somos una empresa de transporte y logistica de Melipilla.  # Describe yourself.
+  desc: Truck transport company.  # Describe yourself.
 
 # comment
 # disqus:  # if you wanna comment feature, go to https://disqus.com/ to get your configuration; if not, comment following two lines.
@@ -36,8 +37,8 @@ author:  # change following line to your infomation.
 
 # analytics
 ## google analytics
- ga:  # if you wanna this feature, go to https://www.google.com/analytics/ to get your configuration; if not, comment following line.
-   id: UA-115987592-1
+ga:  # if you wanna this feature, go to https://www.google.com/analytics/ to get your configuration; if not, comment following line.
+  id: UA-115987592
 
 ## google optimize
 # go:
@@ -48,7 +49,7 @@ author:  # change following line to your infomation.
   # id:
 
 ## donation
-donation: on  # type 'on'/'off' to choice display donation button at post page or not
+donation: off  # type 'on'/'off' to choice display donation button at post page or not
 
 ## carousels
 index_carousel: on  # index page carousel switch
