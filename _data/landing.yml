@@ -6,6 +6,12 @@
   tpl: about.html
   css:
 
+- id: contact-me
+  i18n: nav.contact_me
+  name: Contact
+  tpl: about.html
+  css:
+
 # - id: career
 #   i18n: nav.career
 #   name: Career
