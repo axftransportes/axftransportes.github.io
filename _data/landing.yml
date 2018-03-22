@@ -9,7 +9,7 @@
 - id: contact-me
   i18n: nav.contact_me
   name: Contact
-  tpl: about.html
+  tpl: contact.html
   css:
 
 # - id: career
