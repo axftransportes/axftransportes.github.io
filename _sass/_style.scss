@@ -2748,6 +2748,18 @@ body {
   }
 }
 
+.phone .navbar-brand{
+  display:inline-block; 
+  background:rgba(67, 111, 157, 0.6);
+  padding:3px;
+  margin-bottom:3px;
+  margin-top:7px;
+  color:$primary-white;
+  font-weight:700;
+  font-size:1.6em;
+}
+
+
 @media (min-width: 768px) {
   .landing-page {
     .navbar-wrapper {
