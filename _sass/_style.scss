@@ -1,10 +1,9 @@
 $primary: #ff3d33;
-$primary-white: #fff;
+$primary-white: #fbfbfb;
 $enphasis: #A239CA;
 $primary-dark: #293846;
 $dark-grey: #676a6c;
-$light-grey: #DFE4ED;
-$light-grey-2: #999c9e;
+$light-grey: #999c9e;
 
 $black: #2A2E36;
 
@@ -19,6 +18,7 @@ $warning: #f8ac59;
 $code: #ca4440;
 
 $error: #ed5565;
+
 
 .inline{
   display:inline
@@ -83,7 +83,7 @@ h3, h4, h5 {
     padding: 14px 20px 14px 25px;
   }
   &.navbar-right > li > a {
-    color: $light-grey-2;
+    color: $light-grey;
   }
   > li.active > a {
     color: $primary-white;
@@ -154,7 +154,7 @@ h3, h4, h5 {
     color: $light-grey;
   }
   .text-muted {
-    color: $light-grey-2;
+    color: $light-grey;
   }
 }
 
@@ -735,33 +735,33 @@ button {
     }
   }
   &.btn-primary.dim {
-    box-shadow: inset 0 0 0 $green, 0 5px 0 0 $green, 0 10px 5px $light-grey-2;
+    box-shadow: inset 0 0 0 $green, 0 5px 0 0 $green, 0 10px 5px $light-grey;
     &:active {
-      box-shadow: inset 0 0 0 $green, 0 2px 0 0 $green, 0 5px 3px $light-grey-2;
+      box-shadow: inset 0 0 0 $green, 0 2px 0 0 $green, 0 5px 3px $light-grey;
     }
   }
   &.btn-default.dim {
-    box-shadow: inset 0 0 0 $light-grey-2, 0 5px 0 0 $light-grey-2, 0 10px 5px $light-grey-2;
+    box-shadow: inset 0 0 0 $light-grey, 0 5px 0 0 $light-grey, 0 10px 5px $light-grey;
     &:active {
-      box-shadow: inset 0 0 0 $light-grey-2, 0 2px 0 0 $light-grey-2, 0 5px 3px $light-grey-2;
+      box-shadow: inset 0 0 0 $light-grey, 0 2px 0 0 $light-grey, 0 5px 3px $light-grey;
     }
   }
   &.btn-warning.dim {
-    box-shadow: inset 0 0 0 $warning, 0 5px 0 0 $warning, 0 10px 5px $light-grey-2;
+    box-shadow: inset 0 0 0 $warning, 0 5px 0 0 $warning, 0 10px 5px $light-grey;
     &:active {
-      box-shadow: inset 0 0 0 $warning, 0 2px 0 0 $warning, 0 5px 3px $light-grey-2;
+      box-shadow: inset 0 0 0 $warning, 0 2px 0 0 $warning, 0 5px 3px $light-grey;
     }
   }
   &.btn-info.dim {
-    box-shadow: inset 0 0 0 $info, 0 5px 0 0 $info, 0 10px 5px $light-grey-2;
+    box-shadow: inset 0 0 0 $info, 0 5px 0 0 $info, 0 10px 5px $light-grey;
     &:active {
-      box-shadow: inset 0 0 0 $info, 0 2px 0 0 $info, 0 5px 3px $light-grey-2;
+      box-shadow: inset 0 0 0 $info, 0 2px 0 0 $info, 0 5px 3px $light-grey;
     }
   }
   &.btn-success.dim {
-    box-shadow: inset 0 0 0 $active, 0 5px 0 0 $active, 0 10px 5px $light-grey-2;
+    box-shadow: inset 0 0 0 $active, 0 5px 0 0 $active, 0 10px 5px $light-grey;
     &:active {
-      box-shadow: inset 0 0 0 $active, 0 2px 0 0 $active, 0 5px 3px $light-grey-2;
+      box-shadow: inset 0 0 0 $active, 0 2px 0 0 $active, 0 5px 3px $light-grey;
     }
   }
   &.dim:before {
@@ -825,7 +825,7 @@ button.dim:active:before {
   background-color: $primary-white;
   color: $dark-grey;
   background-color: $black;
-  color: $light-grey-2;
+  color: $light-grey;
 }
 
 .h-150 {
