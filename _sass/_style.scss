@@ -2,14 +2,13 @@ $primary: #ff3d33;
 $primary-white: #fbfbfb;
 $enphasis: #A239CA;
 $primary-dark: #293846;
-$dark-grey: #676a6c;
+$dark-grey:  #676a6c;
 $light-grey: #999c9e;
-
 $black: #2A2E36;
 
 $active: #0073B1;
 
-$success: #1c84c6;
+$success: lighten($active, 20%);
 $info: #23c6c8;
 $green: #16987e;
 
@@ -2484,7 +2483,7 @@ body {
       color: inherit;
     }
     
-
+    
     .navbar-brand {
       &:focus, &:hover {
         background: $primary;
@@ -2657,9 +2656,14 @@ body {
     padding: 20px 0;
   }
   .gray-section {
-    background: $primary;
+    background-image: url("../assets/img/topography.svg"),
+    linear-gradient(110deg, $primary, $primary-dark);
+    //background: $primary;
     margin-top: 60px;
-    color: $primary-white
+    color: $primary-white;
+    p {
+      color: $primary-white;
+    }
   }
   .team-member {
     text-align: center;
