@@ -2066,7 +2066,6 @@ body {
   }
 }
 
-
 @keyframes sk-rotatePlane {
   0% {
     -webkit-transform: perspective(120px) rotateX(0) rotateY(0);
@@ -2084,7 +2083,6 @@ body {
   }
 }
 
-
 @-webkit-keyframes sk-doubleBounce {
   0%, 100% {
     -webkit-transform: scale(0);
@@ -2096,7 +2094,6 @@ body {
     transform: scale(1);
   }
 }
-
 
 @keyframes sk-doubleBounce {
   0%, 100% {
@@ -2110,7 +2107,6 @@ body {
   }
 }
 
-
 @-webkit-keyframes sk-waveStretchDelay {
   0%, 100%, 40% {
     -webkit-transform: scaleY(0.4);
@@ -2123,7 +2119,6 @@ body {
   }
 }
 
-
 @keyframes sk-waveStretchDelay {
   0%, 100%, 40% {
     -webkit-transform: scaleY(0.4);
@@ -2135,7 +2130,6 @@ body {
     transform: scaleY(1);
   }
 }
-
 
 @-webkit-keyframes sk-wanderingCubeMove {
   25% {
@@ -2164,7 +2158,6 @@ body {
   }
 }
 
-
 @keyframes sk-wanderingCubeMove {
   25% {
     -webkit-transform: translateX(42px) rotate(-90deg) scale(0.5);
@@ -2192,7 +2185,6 @@ body {
   }
 }
 
-
 @-webkit-keyframes sk-pulseScaleOut {
   0% {
     -webkit-transform: scale(0);
@@ -2205,7 +2197,6 @@ body {
     opacity: 0;
   }
 }
-
 
 @keyframes sk-pulseScaleOut {
   0% {
@@ -2220,7 +2211,6 @@ body {
   }
 }
 
-
 @-webkit-keyframes sk-chasingDotsRotate {
   100% {
     -webkit-transform: rotate(360deg);
@@ -2228,14 +2218,12 @@ body {
   }
 }
 
-
 @keyframes sk-chasingDotsRotate {
   100% {
     -webkit-transform: rotate(360deg);
     transform: rotate(360deg);
   }
 }
-
 
 @-webkit-keyframes sk-chasingDotsBounce {
   0%, 100% {
@@ -2249,7 +2237,6 @@ body {
   }
 }
 
-
 @keyframes sk-chasingDotsBounce {
   0%, 100% {
     -webkit-transform: scale(0);
@@ -2261,7 +2248,6 @@ body {
     transform: scale(1);
   }
 }
-
 
 @-webkit-keyframes sk-threeBounceDelay {
   0%, 100%, 80% {
@@ -2275,7 +2261,6 @@ body {
   }
 }
 
-
 @keyframes sk-threeBounceDelay {
   0%, 100%, 80% {
     -webkit-transform: scale(0);
@@ -2287,7 +2272,6 @@ body {
     transform: scale(1);
   }
 }
-
 
 @-webkit-keyframes sk-circleBounceDelay {
   0%, 100%, 80% {
@@ -2301,7 +2285,6 @@ body {
   }
 }
 
-
 @keyframes sk-circleBounceDelay {
   0%, 100%, 80% {
     -webkit-transform: scale(0);
@@ -2313,7 +2296,6 @@ body {
     transform: scale(1);
   }
 }
-
 
 @-webkit-keyframes sk-cubeGridScaleDelay {
   0%, 100%, 70% {
@@ -2327,7 +2309,6 @@ body {
   }
 }
 
-
 @keyframes sk-cubeGridScaleDelay {
   0%, 100%, 70% {
     -webkit-transform: scale3D(1, 1, 1);
@@ -2339,7 +2320,6 @@ body {
     transform: scale3D(0, 0, 1);
   }
 }
-
 
 @-webkit-keyframes sk-innerCircle {
   0% {
@@ -2353,7 +2333,6 @@ body {
   }
 }
 
-
 @keyframes sk-innerCircle {
   0% {
     -webkit-transform: rotate(0);
@@ -2366,7 +2345,6 @@ body {
   }
 }
 
-
 @-webkit-keyframes sk-circleFadeDelay {
   0%, 100%, 39% {
     opacity: 0;
@@ -2376,7 +2354,6 @@ body {
     opacity: 1;
   }
 }
-
 
 @keyframes sk-circleFadeDelay {
   0%, 100%, 39% {
@@ -2483,7 +2460,6 @@ body {
       color: inherit;
     }
     
-    
     .navbar-brand {
       &:focus, &:hover {
         background: $primary;
@@ -2499,6 +2475,13 @@ body {
       font-weight: 700;
       transition: all .3s ease-in-out 0s;
     }
+
+    .phone {
+      background: rgba(0, 0, 0, 0) !important;
+      font-size: 18px !important;
+
+    }
+    
   }
   .navbar-scroll.navbar-default .nav li a {
     color: $dark-grey;
@@ -2752,16 +2735,7 @@ body {
   }
 }
 
-.phone .navbar-brand{
-  display:inline-block; 
-  background:rgba(67, 111, 157, 0.6);
-  padding:3px;
-  margin-bottom:3px;
-  margin-top:7px;
-  color:$primary-white;
-  font-weight:700;
-  font-size:1.6em;
-}
+
 
 
 @media (min-width: 768px) {
