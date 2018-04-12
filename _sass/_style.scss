@@ -48,14 +48,6 @@ h3, h4, h5 {
   font-weight: 600;
 }
 
-#phone::before {
-    content: "\f095";
-    font-weight: normal;
-    text-decoration: inherit;
-    font-size: 18px;
-    position: absolute;
-}
-
 .nav {
   > li > a {
     color: $enphasis;
@@ -72,7 +64,7 @@ h3, h4, h5 {
 }
 
 #brand-wrapper {
-  width: 350px;
+  width: 360px;
   //border: 1px solid black;
   overflow: hidden; /* will contain if #first is longer than #second */
 }
@@ -2304,10 +2296,17 @@ body {
   }
   .navbar-default {
     &.navbar-scroll {
+      
       background-color: $primary-white;
       border-color: $primary-white;
       padding: 15px 0;
+      .navbar-brand {
+        width: 150px;
+        text-align: center;
+      }
       .phone {
+        
+        width: 400px;
         color: $dark-grey;
         padding-top: 20px;
         svg {
@@ -2355,6 +2354,7 @@ body {
       }
     }
     &.navbar-scroll .navbar-nav > .active > a:focus {
+      
       background: 0 0;
       color: inherit;
     }
@@ -2365,6 +2365,9 @@ body {
         color: $primary-white;
       }
       background: $primary;
+      width: 160px;
+      margin-left: 20px;
+      margin-right: 10px;
       font-size: 14px;
       @include brand;
     }
