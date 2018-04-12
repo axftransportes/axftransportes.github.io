@@ -2307,6 +2307,13 @@ body {
       background-color: $primary-white;
       border-color: $primary-white;
       padding: 15px 0;
+      .phone {
+        color: $dark-grey;
+        padding-top: 20px;
+        svg {
+          fill: $dark-grey;
+        }
+      }
     }
     background-color: transparent;
     border-color: transparent;
@@ -2859,7 +2866,5 @@ body {
       fill: $dark-grey;
     } 
   }
-
-
   
 }
