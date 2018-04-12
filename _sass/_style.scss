@@ -2489,6 +2489,8 @@ body {
       color: $primary;
     }
   }
+
+
   .navbar-wrapper .navbar.navbar-scroll {
     padding-top: 0;
     padding-bottom: 0;
@@ -2736,8 +2738,6 @@ body {
 }
 
 
-
-
 @media (min-width: 768px) {
   .landing-page {
     .navbar-wrapper {
@@ -2783,9 +2783,6 @@ body {
       margin-top: 6px;
     }
 
-    .phone {
-      color: $dark-grey !important;
-    }
     .navbar-default {
       background-color: $primary-white;
       border-color: $primary-white;
