@@ -73,16 +73,16 @@ h3, h4, h5 {
 
 #brand-wrapper {
   width: 350px;
-  border: 1px solid black;
+  //border: 1px solid black;
   overflow: hidden; /* will contain if #first is longer than #second */
 }
 #brand-button {
   width: 158px;
    /* add this */
-  border: 1px solid rgb(38, 0, 255);
+  //border: 1px solid rgb(38, 0, 255);
 }
 #brand-phone {
-  border: 1px solid green;
+  //border: 1px solid green;
   overflow: initial; /* if you don't want #second to wrap below #first */
 }
 
