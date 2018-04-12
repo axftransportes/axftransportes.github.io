@@ -1,4 +1,5 @@
 @import "variables";
+@import "mixins";
 
 .inline{
   display:inline
@@ -70,21 +71,35 @@ h3, h4, h5 {
 
 }
 
+#brand-wrapper {
+  width: 350px;
+  border: 1px solid black;
+  overflow: hidden; /* will contain if #first is longer than #second */
+}
+#brand-button {
+  width: 158px;
+   /* add this */
+  border: 1px solid rgb(38, 0, 255);
+}
+#brand-phone {
+  border: 1px solid green;
+  overflow: initial; /* if you don't want #second to wrap below #first */
+}
 
 .phone {
   &:focus, &:hover {
     background: $transparent;
-    color: $primary-white;
+    color: $primary;
   }
-  color: $primary-white;
-  height: auto;
   display: block;
-  font-size: 18px;
   background:$transparent;
-  padding: 15px 20px;
-  border-radius: 0 0 5px 5px;
-  font-weight: 700;
-  transition: all .3s ease-in-out 0s;
+  font-size: 18px;
+  @include brand;
+}
+
+.phone svg {
+  display: inline-block;
+  vertical-align: middle;
 }
 
 .top-navigation .phone {
@@ -2342,15 +2357,9 @@ body {
         background: $primary;
         color: $primary-white;
       }
-      color: $primary-white;
-      height: auto;
-      display: block;
-      font-size: 14px;
       background: $primary;
-      padding: 15px 20px;
-      border-radius: 0 0 5px 5px;
-      font-weight: 700;
-      transition: all .3s ease-in-out 0s;
+      font-size: 14px;
+      @include brand;
     }
     
   }
@@ -2840,4 +2849,17 @@ body {
     display: block;
     float: none;
   }
+}
+
+@media (max-width: 768px) {
+  .phone {
+    color: $dark-grey;
+    overflow: hidden;
+    svg {
+      fill: $dark-grey;
+    } 
+  }
+
+
+  
 }
