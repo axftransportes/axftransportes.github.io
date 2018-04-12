@@ -6,8 +6,8 @@
   # flag: /static/assets/img/flags/China.png
 
 
- - locale: en
-   flag: /static/assets/img/flags/United-States.png
+#  - locale: en
+#    flag: /static/assets/img/flags/United-States.png
 
- - locale: es
-   flag: /static/assets/img/flags/Spain.png
+#  - locale: es
+#    flag: /static/assets/img/flags/Spain.png
