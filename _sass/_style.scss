@@ -1,23 +1,4 @@
-$primary: #ff3d33;
-$primary-white: #fbfbfb;
-$enphasis: #A239CA;
-$primary-dark: #293846;
-$dark-grey:  #676a6c;
-$light-grey: #999c9e;
-$black: #2A2E36;
-
-$active: #0073B1;
-
-$success: lighten($active, 20%);
-$info: #23c6c8;
-$green: #16987e;
-
-$warning: #f8ac59;
-
-$code: #ca4440;
-
-$error: #ed5565;
-
+@import "variables";
 
 .inline{
   display:inline
@@ -74,7 +55,6 @@ h3, h4, h5 {
     position: absolute;
 }
 
-
 .nav {
   > li > a {
     color: $enphasis;
@@ -87,6 +67,30 @@ h3, h4, h5 {
   > li.active > a {
     color: $primary-white;
   }
+
+}
+
+
+.phone {
+  &:focus, &:hover {
+    background: $transparent;
+    color: $primary-white;
+  }
+  color: $primary-white;
+  height: auto;
+  display: block;
+  font-size: 18px;
+  background:$transparent;
+  padding: 15px 20px;
+  border-radius: 0 0 5px 5px;
+  font-weight: 700;
+  transition: all .3s ease-in-out 0s;
+}
+
+.top-navigation .phone {
+  background: $transparent;
+  color: $primary-white;
+  padding: 15px 25px;
 }
 
 .navbar-default .nav > li > a {
@@ -178,14 +182,6 @@ h3, h4, h5 {
   z-index: 2000;
 }
 
-.count-info .label {
-  line-height: 12px;
-  padding: 2px 5px;
-  position: absolute;
-  right: 6px;
-  top: 12px;
-}
-
 .navbar-default .landing_link a {
   background: $primary;
   color: $primary-white;
@@ -208,6 +204,14 @@ h3, h4, h5 {
 
 .navbar-static-top {
   background: $primary;
+}
+
+.count-info .label {
+  line-height: 12px;
+  padding: 2px 5px;
+  position: absolute;
+  right: 6px;
+  top: 12px;
 }
 
 .fixed-nav #wrapper {
@@ -347,33 +351,8 @@ body.canvas-menu .nav-header {
   font-size: 14px;
 }
 
-@media (max-width: 768px) {
-  .top-navigation .navbar-header {
-    display: block;
-    float: none;
-  }
-}
-
 .menu-visible-lg, .menu-visible-md {
   display: none !important;
-}
-
-@media (min-width: 1200px) {
-  .menu-visible-lg {
-    display: block !important;
-  }
-}
-
-@media (min-width: 992px) {
-  .menu-visible-md {
-    display: block !important;
-  }
-}
-
-@media (max-width: 767px) {
-  .menu-visible-lg, .menu-visible-md {
-    display: block !important;
-  }
 }
 
 button.dim {
@@ -1077,17 +1056,6 @@ label.error {
   background: $light-grey;
 }
 
-@media only screen and (min-width: 1170px) {
-  #vertical-timeline.center-orientation {
-    margin-top: 3em;
-    margin-bottom: 3em;
-    &:before {
-      left: 50%;
-      margin-left: -2px;
-    }
-  }
-}
-
 .vertical-timeline-block {
   position: relative;
   margin: 2em 0;
@@ -1101,18 +1069,6 @@ label.error {
   }
   &:last-child {
     margin-bottom: 0;
-  }
-}
-
-@media only screen and (min-width: 1170px) {
-  .center-orientation .vertical-timeline-block {
-    margin: 4em 0;
-    &:first-child {
-      margin-top: 0;
-    }
-    &:last-child {
-      margin-bottom: 0;
-    }
   }
 }
 
@@ -1134,22 +1090,6 @@ label.error {
     top: 50%;
     margin-left: -12px;
     margin-top: -9px;
-  }
-}
-
-@media only screen and (min-width: 1170px) {
-  .center-orientation .vertical-timeline-icon {
-    width: 50px;
-    height: 50px;
-    left: 50%;
-    margin-left: -25px;
-    -webkit-transform: translateZ(0);
-    -webkit-backface-visibility: hidden;
-    font-size: 19px;
-    i {
-      margin-left: -12px;
-      margin-top: -10px;
-    }
   }
 }
 
@@ -1192,61 +1132,6 @@ label.error {
   width: 0;
   border: 7px solid transparent;
   border-right: 7px solid $primary-white;
-}
-
-@media only screen and (min-width: 768px) {
-  .vertical-timeline-content {
-    h2 {
-      font-size: 18px;
-    }
-    p {
-      font-size: 13px;
-    }
-  }
-}
-
-@media only screen and (min-width: 1170px) {
-  .center-orientation {
-    .vertical-timeline-content {
-      margin-left: 0;
-      padding: 1.6em;
-      width: 45%;
-      &::before {
-        top: 24px;
-        left: 100%;
-        border-color: transparent transparent transparent $primary-white;
-      }
-      .btn {
-        float: left;
-      }
-    }
-    .vertical-timeline-block:nth-child(even) .vertical-timeline-content {
-      float: right;
-      .btn {
-        float: right;
-      }
-    }
-    .vertical-timeline-content .vertical-date {
-      position: absolute;
-      width: 100%;
-      left: 122%;
-      top: 2px;
-      font-size: 14px;
-    }
-    .vertical-timeline-block:nth-child(even) .vertical-timeline-content {
-      &::before {
-        top: 24px;
-        left: auto;
-        right: 100%;
-        border-color: transparent $primary-white transparent transparent;
-      }
-      .vertical-date {
-        left: auto;
-        right: 122%;
-        text-align: right;
-      }
-    }
-  }
 }
 
 .slick-next:before, .slick-prev:before {
@@ -1301,14 +1186,6 @@ a {
   padding: 0 15px;
   min-height: 568px;
   position: relative !important;
-}
-
-@media (min-width: 768px) {
-  #page-wrapper {
-    position: inherit;
-    margin: 0 0 0 240px;
-    min-height: 2002px;
-  }
 }
 
 .ibox-content {
@@ -2475,12 +2352,6 @@ body {
       font-weight: 700;
       transition: all .3s ease-in-out 0s;
     }
-
-    .phone {
-      background: rgba(0, 0, 0, 0) !important;
-      font-size: 18px !important;
-
-    }
     
   }
   .navbar-scroll.navbar-default .nav li a {
@@ -2737,6 +2608,7 @@ body {
   }
 }
 
+//===================== MEDIA =============================
 
 @media (min-width: 768px) {
   .landing-page {
@@ -2767,6 +2639,7 @@ body {
 }
 
 @media (max-width: 768px) {
+
   .landing-page {
     .carousel-caption {
       left: 5%;
@@ -2796,7 +2669,7 @@ body {
         &:hover {
           color: $primary;
         }
-      }
+      }      
     }
     .navbar-wrapper .navbar {
       padding-top: 0;
@@ -2839,5 +2712,132 @@ body {
         border: none;
       }
     }
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .vertical-timeline-content {
+    h2 {
+      font-size: 18px;
+    }
+    p {
+      font-size: 13px;
+    }
+  }
+}
+
+@media only screen and (min-width: 1170px) {
+  .center-orientation {
+    .vertical-timeline-content {
+      margin-left: 0;
+      padding: 1.6em;
+      width: 45%;
+      &::before {
+        top: 24px;
+        left: 100%;
+        border-color: transparent transparent transparent $primary-white;
+      }
+      .btn {
+        float: left;
+      }
+    }
+    .vertical-timeline-block:nth-child(even) .vertical-timeline-content {
+      float: right;
+      .btn {
+        float: right;
+      }
+    }
+    .vertical-timeline-content .vertical-date {
+      position: absolute;
+      width: 100%;
+      left: 122%;
+      top: 2px;
+      font-size: 14px;
+    }
+    .vertical-timeline-block:nth-child(even) .vertical-timeline-content {
+      &::before {
+        top: 24px;
+        left: auto;
+        right: 100%;
+        border-color: transparent $primary-white transparent transparent;
+      }
+      .vertical-date {
+        left: auto;
+        right: 122%;
+        text-align: right;
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  #page-wrapper {
+    position: inherit;
+    margin: 0 0 0 240px;
+    min-height: 2002px;
+  }
+}
+
+@media only screen and (min-width: 1170px) {
+  .center-orientation .vertical-timeline-icon {
+    width: 50px;
+    height: 50px;
+    left: 50%;
+    margin-left: -25px;
+    -webkit-transform: translateZ(0);
+    -webkit-backface-visibility: hidden;
+    font-size: 19px;
+    i {
+      margin-left: -12px;
+      margin-top: -10px;
+    }
+  }
+}
+
+@media only screen and (min-width: 1170px) {
+  .center-orientation .vertical-timeline-block {
+    margin: 4em 0;
+    &:first-child {
+      margin-top: 0;
+    }
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+@media only screen and (min-width: 1170px) {
+  #vertical-timeline.center-orientation {
+    margin-top: 3em;
+    margin-bottom: 3em;
+    &:before {
+      left: 50%;
+      margin-left: -2px;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .menu-visible-lg {
+    display: block !important;
+  }
+}
+
+@media (min-width: 992px) {
+  .menu-visible-md {
+    display: block !important;
+  }
+}
+
+@media (max-width: 767px) {
+  .menu-visible-lg, .menu-visible-md {
+    display: block !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .top-navigation .navbar-header {
+    display: block;
+    float: none;
   }
 }
