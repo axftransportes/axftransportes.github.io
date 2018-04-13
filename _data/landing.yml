@@ -2,13 +2,13 @@
 # custom following lines to edit your index page
 - id: about-me
   i18n: nav.about_me
-  name: About
+  name: Quienes Sómos
   tpl: about.html
   css:
 
 - id: contact-me
   i18n: nav.contact_me
-  name: Contact
+  name: Contacto
   tpl: contact.html
   css:
 
@@ -18,11 +18,11 @@
 #   tpl: career.html
 #   css: timeline
 
-- id: services
-  i18n: nav.services
-  name: Services
-  tpl: services.html
-  css: timeline
+# - id: services
+#   i18n: nav.services
+#   name: Servicios
+#   tpl: services.html
+#   css: timeline
 
 # - id: skills
 #   i18n: nav.skills
@@ -30,11 +30,11 @@
 #   tpl: skills.html
 #   css: team
 
-- id: projects
-  i18n: nav.projects
-  name: Projects
-  tpl: projects.html
-  css: project
+# - id: projects
+#   i18n: nav.projects
+#   name: Proyectos
+#   tpl: projects.html
+#   css: project
 
 # - id: blog
 #   i18n: nav.blog
@@ -43,8 +43,8 @@
 #   page: blog/
 #   css: testimonials navy-section
 
-- id: links
-  i18n: nav.link
-  name: Links
-  tpl: links.html
-  css: contact
+# - id: links
+#   i18n: nav.link
+#   name: Links
+#   tpl: links.html
+#   css: contact
