@@ -12,36 +12,37 @@
                 <div class="col-lg-8 col-lg-offset-2">
                     <!-- To configure the contact form email address, go to mail/contact_me.php and update the email address in the PHP file on line 19. -->
                     <!-- The form should work on most web servers, but if the form is not working you may need to configure your web server differently. -->
-                    ---
-                    layout: default
-                    title: Contact
-                    ---
 
-                    <form class="form" id="contactform" action="//formspree.io/pfariasmunoz@gmail.com" method="POST">
-                     <fieldset class="field">
-                       <input class="input" type="text" name="name" placeholder="Name" id="name" required>
-                       <label class="label" for="name">
-                         <span class="label-content">Your name</span>
-                       </label>
-                     </fieldset>
-                     <fieldset class="field">
-                       <input class="input" type="email" name="_replyto" placeholder="example@domain.com" id="_replyto" required>
-                       <label class="label" for="_replyto">
-                         <span class="label-content">Your email</span>
-                       </label>
-                     </fieldset>
-                     <fieldset class="field">
-                       <textarea class="input" name="message" rows="1" placeholder="Message" id="message" required></textarea>
-                       <label class="label" for="message">
-                         <span class="label-content">Your message</span>
-                       </label>
-                     </fieldset>
-                     <input class="hidden" type="text" name="_gotcha" style="display:none">
-                     <input class="hidden" type="hidden" name="_subject" value="Message via http://domain.com">
-                     <fieldset class="field">
-                       <input class="button submit" type="submit" value="Send">
-                     </fieldset>
-                    </form>
+                    <div container-form>
+                        <form class="form" id="contactform" action="//formspree.io/pfariasmunoz@gmail.com" method="POST">
+                            <fieldset class="field">
+                                <label class="label" for="name">
+                                    <span class="label-content">Your name</span>
+                                </label>
+                                <input class="input" type="text" name="name" placeholder="Name" id="name" required>
+                                
+                            </fieldset>
+                            <fieldset class="field">
+                                <label id="label-email" class="label" for="_replyto">
+                                    <span class="label-content">Your email</span>
+                                </label>
+                                <input class="input" type="email" name="_replyto" placeholder="example@domain.com" id="_replyto" required>
+                                
+                            </fieldset>
+                            <fieldset class="field">
+                                <label class="label" for="message">
+                                    <span class="label-content">Your message</span>
+                                </label>
+                                <textarea id="user-message" class="input" name="message" rows="1" placeholder="Message" id="message" required></textarea>                       
+                            </fieldset>
+                            <input class="hidden" type="text" name="_gotcha" style="display:none">
+                            <input class="hidden" type="hidden" name="_subject" value="Message via http://domain.com">
+                            <fieldset class="field">
+                                <input class="button submit" type="submit" value="Enviar">
+                            </fieldset>
+                        </form>
+                    </div>
+                    
 
                     <!--<form name="sentMessage" id="contactForm" novalidate>
                         <div class="row control-group">
