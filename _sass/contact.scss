@@ -7,24 +7,28 @@ input[type=text], input[type=email], select, textarea {
 	//margin-top: 6px;
 	resize: vertical;
 	color: $dark-grey;
+	font-size: 14px;
 }
 
 input[type=submit] {
-	background-color: #4caf50;
-	color: rgb(248, 248, 248);
+	background-color: $green;
+	color: $primary-white;
 	font-weight: bold;
 	padding: 12px 20px;
 	border: none;
 	border-radius: 4px;
 	cursor: pointer;
+	font-size: 16px;
 }
 input[type=submit]:hover {
-	background-color: #45a049;
+	background-color: lighten($color: $green, $amount: 25);
 	display: block;
 	color: $primary-white;
+	
 }
 #user-message {
 	height: 200px;
+	min-height: 200px;
 }
 label {
 	display: block;
