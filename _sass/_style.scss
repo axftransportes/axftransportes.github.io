@@ -89,6 +89,8 @@ h3, h4, h5 {
     color: $primary;
   }
   display: block;
+  white-space: nowrap;
+  overflow: hidden;
   background:$transparent;
   font-size: 18px;
   @include brand;
