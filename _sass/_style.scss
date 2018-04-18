@@ -88,14 +88,19 @@ h3, h4, h5 {
     background: $transparent;
     color: $primary;
   }
-  display: block;
   white-space: nowrap;
   overflow: hidden;
-  background:$transparent;
+  background: none;
   font-size: 18px;
   @include brand;
 }
+.phone1 {
+  padding-bottom: 0px !important;
+}
 
+.phone2 {
+  padding-top: 0px !important;
+}
 .phone svg {
   display: inline-block;
   vertical-align: middle;
