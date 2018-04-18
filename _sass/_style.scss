@@ -1,9 +1,23 @@
 @import "variables";
 @import "mixins";
 @import "contact";
+.img-site {
+  position: relative;
+  text-align: center;
+  color: white;
+}
 
-.inline{
-  display:inline
+.title-site {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 25px;
+  font-style: bold;
+}
+
+.inline {
+  display: inline
 }
 
 #author-desc {
@@ -11,7 +25,8 @@
 }
 
 .landing-page .carousel-caption {
-  h1, p {
+  h1,
+  p {
     text-transform: uppercase;
   }
 }
@@ -20,7 +35,12 @@ button.dim {
   text-transform: uppercase;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-weight: 100;
 }
 
@@ -48,44 +68,49 @@ h6 {
   font-size: 10px;
 }
 
-h3, h4, h5 {
+h3,
+h4,
+h5 {
   margin-top: 5px;
   font-weight: 600;
 }
 
 .nav {
-  > li > a {
+  >li>a {
     color: $enphasis;
     font-weight: 600;
     padding: 14px 20px 14px 25px;
   }
-  &.navbar-right > li > a {
+  &.navbar-right>li>a {
     color: $light-grey;
   }
-  > li.active > a {
+  >li.active>a {
     color: $primary-white;
   }
-
 }
 
 #brand-wrapper {
-  width: 360px;
-  //border: 1px solid black;
+  width: 360px; //border: 1px solid black;
   white-space: nowrap;
-  overflow: hidden; /* will contain if #first is longer than #second */
+  overflow: hidden;
+  /* will contain if #first is longer than #second */
 }
+
 #brand-button {
   width: $brand_button_width;
-   /* add this */
+  /* add this */
   //border: 1px solid rgb(38, 0, 255);
 }
+
 #brand-phone {
   //border: 1px solid green;
-  overflow: initial; /* if you don't want #second to wrap below #first */
+  overflow: initial;
+  /* if you don't want #second to wrap below #first */
 }
 
 .phone {
-  &:focus, &:hover {
+  &:focus,
+  &:hover {
     background: $transparent;
     color: $primary;
   }
@@ -95,6 +120,7 @@ h3, h4, h5 {
   font-size: 18px;
   @include brand;
 }
+
 .phone1 {
   padding-top: 5px !important;
   padding-bottom: 0px !important;
@@ -103,6 +129,7 @@ h3, h4, h5 {
 .phone2 {
   padding-top: 0px !important;
 }
+
 .phone svg {
   display: inline-block;
   vertical-align: middle;
@@ -114,15 +141,17 @@ h3, h4, h5 {
   padding: 15px 25px;
 }
 
-.navbar-default .nav > li > a {
-  &:focus, &:hover {
+.navbar-default .nav>li>a {
+  &:focus,
+  &:hover {
     background-color: $primary-dark;
     color: $primary-white;
   }
 }
 
-.nav.navbar-top-links > li > a {
-  &:focus, &:hover {
+.nav.navbar-top-links>li>a {
+  &:focus,
+  &:hover {
     background-color: transparent;
   }
 }
@@ -131,7 +160,7 @@ h3, h4, h5 {
   background-color: transparent;
 }
 
-.nav > li > a i {
+.nav>li>a i {
   margin-right: 6px;
 }
 
@@ -159,7 +188,8 @@ h3, h4, h5 {
   min-height: 50px;
 }
 
-.dd-item > button, code {
+.dd-item>button,
+code {
   white-space: nowrap;
 }
 
@@ -168,7 +198,7 @@ h3, h4, h5 {
   background: url(patterns/header-profile.png) no-repeat;
 }
 
-.nav > li.active {
+.nav>li.active {
   border-left: 4px solid $primary;
   background: $primary-dark;
 }
@@ -269,7 +299,8 @@ body.canvas-menu .nav-header {
 }
 
 .white-bg {
-  .navbar-fixed-top, .navbar-static-top {
+  .navbar-fixed-top,
+  .navbar-static-top {
     background: $primary-white;
   }
 }
@@ -278,13 +309,14 @@ body.canvas-menu .nav-header {
   .navbar {
     margin-bottom: 0;
   }
-  .nav > li {
-    > a {
+  .nav>li {
+    >a {
       padding: 15px 20px;
       color: $dark-grey;
     }
     a {
-      &:focus, &:hover {
+      &:focus,
+      &:hover {
         background: $primary-white;
         color: $primary;
       }
@@ -292,7 +324,7 @@ body.canvas-menu .nav-header {
     &.active {
       background: $primary-white;
       border: none;
-      > a {
+      >a {
         color: $primary;
       }
     }
@@ -303,13 +335,15 @@ body.canvas-menu .nav-header {
 }
 
 .btn-default {
-  &.active, &:active {
+  &.active,
+  &:active {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15) inset;
   }
 }
 
 .btn-white {
-  &.active, &:active {
+  &.active,
+  &:active {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15) inset;
   }
 }
@@ -320,22 +354,23 @@ body.canvas-menu .nav-header {
   padding: 15px 25px;
 }
 
-
-
 .btn-info {
-  &.active, &:active {
+  &.active,
+  &:active {
     background-image: none;
   }
 }
 
 .btn-primary {
-  &.active, &:active {
+  &.active,
+  &:active {
     background-image: none;
   }
 }
 
 .btn-success {
-  &.active, &:active {
+  &.active,
+  &:active {
     background-image: none;
   }
 }
@@ -361,7 +396,8 @@ body.canvas-menu .nav-header {
   }
 }
 
-.body-small .top-navigation .wrapper.wrapper-content, .top-navigation.body-small .wrapper.wrapper-content {
+.body-small .top-navigation .wrapper.wrapper-content,
+.top-navigation.body-small .wrapper.wrapper-content {
   padding: 40px 0;
 }
 
@@ -372,7 +408,8 @@ body.canvas-menu .nav-header {
   font-size: 14px;
 }
 
-.menu-visible-lg, .menu-visible-md {
+.menu-visible-lg,
+.menu-visible-md {
   display: none !important;
 }
 
@@ -400,7 +437,10 @@ button.dim {
   color: $warning;
 }
 
-.btn-info.btn-outline:hover, .btn-primary.btn-outline:hover, .btn-success.btn-outline:hover, .btn-warning.btn-outline:hover {
+.btn-info.btn-outline:hover,
+.btn-primary.btn-outline:hover,
+.btn-success.btn-outline:hover,
+.btn-warning.btn-outline:hover {
   color: $primary-white;
 }
 
@@ -412,7 +452,8 @@ button.dim {
     background-color: $active;
     border-color: $active;
     color: $primary-white;
-    &:focus, &:hover {
+    &:focus,
+    &:hover {
       background-color: $active;
       border-color: $active;
       color: $primary-white;
@@ -422,13 +463,15 @@ button.dim {
     background-color: $active;
     border-color: $active;
     color: $primary-white;
-    &:focus, &:hover {
+    &:focus,
+    &:hover {
       background-color: $active;
       border-color: $active;
       color: $primary-white;
     }
   }
-  &:focus, &:hover {
+  &:focus,
+  &:hover {
     background-color: $active;
     border-color: $active;
     color: $primary-white;
@@ -440,7 +483,9 @@ button.dim {
   &[disabled] {
     background-color: $active;
     border-color: $active;
-    &:active, &:focus, &:hover {
+    &:active,
+    &:focus,
+    &:hover {
       background-color: $active;
       border-color: $active;
     }
@@ -455,7 +500,8 @@ button.dim {
     background-color: $active;
     border-color: $active;
     color: $primary-white;
-    &:focus, &:hover {
+    &:focus,
+    &:hover {
       background-color: $active;
       border-color: $active;
       color: $primary-white;
@@ -465,13 +511,15 @@ button.dim {
     background-color: $active;
     border-color: $active;
     color: $primary-white;
-    &:focus, &:hover {
+    &:focus,
+    &:hover {
       background-color: $active;
       border-color: $active;
       color: $primary-white;
     }
   }
-  &:focus, &:hover {
+  &:focus,
+  &:hover {
     background-color: $active;
     border-color: $active;
     color: $primary-white;
@@ -483,7 +531,9 @@ button.dim {
   &[disabled] {
     background-color: $success;
     border-color: $success;
-    &:active, &:focus, &:hover {
+    &:active,
+    &:focus,
+    &:hover {
       background-color: $success;
       border-color: $success;
     }
@@ -498,7 +548,8 @@ button.dim {
     background-color: $info;
     border-color: $info;
     color: $primary-white;
-    &:focus, &:hover {
+    &:focus,
+    &:hover {
       background-color: $info;
       border-color: $info;
       color: $primary-white;
@@ -508,13 +559,15 @@ button.dim {
     background-color: $info;
     border-color: $info;
     color: $primary-white;
-    &:focus, &:hover {
+    &:focus,
+    &:hover {
       background-color: $info;
       border-color: $info;
       color: $primary-white;
     }
   }
-  &:focus, &:hover {
+  &:focus,
+  &:hover {
     background-color: $info;
     border-color: $info;
     color: $primary-white;
@@ -526,7 +579,9 @@ button.dim {
   &[disabled] {
     background-color: $info;
     border-color: $info;
-    &:active, &:focus, &:hover {
+    &:active,
+    &:focus,
+    &:hover {
       background-color: $info;
       border-color: $info;
     }
@@ -540,13 +595,15 @@ button.dim {
 }
 
 .btn-link {
-  &.active, &:active {
+  &.active,
+  &:active {
     background-image: none;
   }
 }
 
 .btn-warning {
-  &.active, &:active {
+  &.active,
+  &:active {
     background-image: none;
   }
 }
@@ -555,7 +612,8 @@ button.dim {
   &.active {
     color: inherit;
     border: 1px solid $light-grey;
-    &:focus, &:hover {
+    &:focus,
+    &:hover {
       color: inherit;
       border: 1px solid $light-grey;
     }
@@ -563,12 +621,14 @@ button.dim {
   &:active {
     color: inherit;
     border: 1px solid $light-grey;
-    &:focus, &:hover {
+    &:focus,
+    &:hover {
       color: inherit;
       border: 1px solid $light-grey;
     }
   }
-  &:focus, &:hover {
+  &:focus,
+  &:hover {
     color: inherit;
     border: 1px solid $light-grey;
   }
@@ -577,7 +637,9 @@ button.dim {
   }
   &[disabled] {
     color: $light-grey;
-    &:active, &:focus, &:hover {
+    &:active,
+    &:focus,
+    &:hover {
       color: $light-grey;
     }
   }
@@ -591,7 +653,8 @@ button.dim {
     background-color: $warning;
     border-color: $warning;
     color: $primary-white;
-    &:focus, &:hover {
+    &:focus,
+    &:hover {
       background-color: $warning;
       border-color: $warning;
       color: $primary-white;
@@ -601,13 +664,15 @@ button.dim {
     background-color: $warning;
     border-color: $warning;
     color: $primary-white;
-    &:focus, &:hover {
+    &:focus,
+    &:hover {
       background-color: $warning;
       border-color: $warning;
       color: $primary-white;
     }
   }
-  &:focus, &:hover {
+  &:focus,
+  &:hover {
     background-color: $warning;
     border-color: $warning;
     color: $primary-white;
@@ -619,7 +684,9 @@ button.dim {
   &[disabled] {
     background-color: $warning;
     border-color: $warning;
-    &:active, &:focus, &:hover {
+    &:active,
+    &:focus,
+    &:hover {
       background-color: $warning;
       border-color: $warning;
     }
@@ -628,7 +695,10 @@ button.dim {
 
 .btn-link {
   color: inherit;
-  &.active, &:active, &:focus, &:hover {
+  &.active,
+  &:active,
+  &:focus,
+  &:hover {
     color: $primary;
     text-decoration: none;
   }
@@ -637,7 +707,9 @@ button.dim {
   }
   &[disabled] {
     color: $light-grey;
-    &:active, &:focus, &:hover {
+    &:active,
+    &:focus,
+    &:hover {
       color: $light-grey;
     }
   }
@@ -650,7 +722,8 @@ button.dim {
   &.active {
     color: inherit;
     border: 1px solid $light-grey;
-    &:focus, &:hover {
+    &:focus,
+    &:hover {
       color: inherit;
       border: 1px solid $light-grey;
     }
@@ -658,16 +731,19 @@ button.dim {
   &:active {
     color: inherit;
     border: 1px solid $light-grey;
-    &:focus, &:hover {
+    &:focus,
+    &:hover {
       color: inherit;
       border: 1px solid $light-grey;
     }
   }
-  &:focus, &:hover {
+  &:focus,
+  &:hover {
     color: inherit;
     border: 1px solid $light-grey;
   }
-  &.active, &:active {
+  &.active,
+  &:active {
     background-image: none;
   }
   &.active[disabled] {
@@ -675,7 +751,9 @@ button.dim {
   }
   &[disabled] {
     color: $light-grey;
-    &:active, &:focus, &:hover {
+    &:active,
+    &:focus,
+    &:hover {
       color: $light-grey;
     }
   }
@@ -688,12 +766,17 @@ button.dim {
   }
 }
 
-.has-error .form-control:focus, .has-success .form-control:focus, .has-warning .form-control:focus, .navbar-collapse, .navbar-form {
+.has-error .form-control:focus,
+.has-success .form-control:focus,
+.has-warning .form-control:focus,
+.navbar-collapse,
+.navbar-form {
   box-shadow: none;
 }
 
 .navbar-form-custom .form-control {
-  &:focus, &:hover {
+  &:focus,
+  &:hover {
     box-shadow: none;
   }
 }
@@ -862,7 +945,8 @@ button.dim:active:before {
     display: inline-block;
     vertical-align: middle;
   }
-  h2, h3 {
+  h2,
+  h3 {
     margin: 0;
   }
 }
@@ -930,7 +1014,7 @@ button.dim:active:before {
   text-align: center;
 }
 
-.dd-item > button {
+.dd-item>button {
   text-align: center;
   &:before {
     text-align: center;
@@ -941,14 +1025,17 @@ button.dim:active:before {
   text-align: center;
 }
 
-.dd, .dd-list {
+.dd,
+.dd-list {
   display: block;
   padding: 0;
   margin: 0;
   list-style: none;
 }
 
-.dd, .dd-item > button, .dd-list {
+.dd,
+.dd-item>button,
+.dd-list {
   position: relative;
 }
 
@@ -965,7 +1052,8 @@ button.dim:active:before {
   display: none;
 }
 
-.dd-item, .dd-placeholder {
+.dd-item,
+.dd-placeholder {
   display: block;
   position: relative;
   margin: 0;
@@ -975,7 +1063,7 @@ button.dim:active:before {
   line-height: 20px;
 }
 
-.dd-item > button {
+.dd-item>button {
   display: block;
   cursor: pointer;
   float: left;
@@ -1012,7 +1100,8 @@ button.dim:active:before {
   -moz-box-sizing: border-box;
 }
 
-#wrapper, body {
+#wrapper,
+body {
   overflow-x: hidden;
 }
 
@@ -1155,7 +1244,8 @@ label.error {
   border-right: 7px solid $primary-white;
 }
 
-.slick-next:before, .slick-prev:before {
+.slick-next:before,
+.slick-prev:before {
   color: $primary !important;
 }
 
@@ -1178,7 +1268,8 @@ html {
 
 a {
   cursor: pointer;
-  &:focus, &:hover {
+  &:focus,
+  &:hover {
     text-decoration: none;
   }
 }
@@ -1210,18 +1301,27 @@ a {
 }
 
 .ibox-content {
-  h1, h2, h3, h4, h5 {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
     margin-top: 5px;
   }
 }
 
 .ibox-title {
-  h1, h2, h3, h4, h5 {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
     margin-top: 5px;
   }
 }
 
-.link-block, .nav.navbar-top-links .link-block a {
+.link-block,
+.nav.navbar-top-links .link-block a {
   font-size: 12px;
 }
 
@@ -1234,7 +1334,9 @@ a {
   border-top: 0 !important;
 }
 
-.border-left, .border-left-right, .border-right {
+.border-left,
+.border-left-right,
+.border-right {
   border-top: none;
   border-bottom: none;
 }
@@ -1293,7 +1395,8 @@ code {
   padding: 2px 4px;
 }
 
-.ibox-content, .ibox-title {
+.ibox-content,
+.ibox-title {
   background-color: $primary-white;
   border-color: $light-grey;
   border-image: none;
@@ -1308,7 +1411,8 @@ code {
   &.collapsed .ibox-content {
     display: none;
   }
-  &:after, &:before {
+  &:after,
+  &:before {
     display: table;
   }
 }
@@ -1416,7 +1520,8 @@ code {
   color: $primary-white;
 }
 
-.contact-box, .light-navbar .navbar.navbar-static-top {
+.contact-box,
+.light-navbar .navbar.navbar-static-top {
   background-color: $primary-white;
 }
 
@@ -1587,7 +1692,7 @@ a.close-canvas-menu {
   border: 1px solid $light-grey;
   padding: 20px;
   margin-bottom: 20px;
-  > a {
+  >a {
     color: inherit;
   }
 }
@@ -1607,7 +1712,8 @@ a.close-canvas-menu {
 }
 
 .timeline-item {
-  .content, .date i {
+  .content,
+  .date i {
     border-left: 1px solid $light-grey;
     border-top: 1px solid $light-grey;
   }
@@ -1688,7 +1794,8 @@ ul.clear-list:first-child {
 }
 
 .file {
-  .icon, .image {
+  .icon,
+  .image {
     height: 100px;
     overflow: hidden;
   }
@@ -1722,7 +1829,8 @@ ul.clear-list:first-child {
   color: $dark-grey;
 }
 
-.vote-icon, .vote-title {
+.vote-icon,
+.vote-title {
   display: block;
 }
 
@@ -1759,7 +1867,8 @@ ul.clear-list:first-child {
   margin-bottom: 20px;
 }
 
-.mail-body, .mail-text {
+.mail-body,
+.mail-text {
   border-top: 1px solid $light-grey;
 }
 
@@ -1795,7 +1904,8 @@ ul.clear-list:first-child {
   line-height: 22px;
 }
 
-.article h1, .blog h2 {
+.article h1,
+.blog h2 {
   font-weight: 700;
 }
 
@@ -1805,7 +1915,8 @@ ul.clear-list:first-child {
 }
 
 .blog {
-  .btn, h5 {
+  .btn,
+  h5 {
     margin: 0 0 5px;
   }
 }
@@ -1853,7 +1964,9 @@ ul.clear-list:first-child {
   }
 }
 
-.social-comment .social-comment, .vote-info, .vote-title {
+.social-comment .social-comment,
+.vote-info,
+.vote-title {
   margin-left: 45px;
 }
 
@@ -1905,7 +2018,8 @@ ul.clear-list:first-child {
 
 .vote-title {
   color: inherit;
-  &:focus, &:hover {
+  &:focus,
+  &:hover {
     color: inherit;
   }
   font-size: 18px;
@@ -1952,12 +2066,10 @@ body {
     -webkit-transform: perspective(120px) rotateX(0) rotateY(0);
     transform: perspective(120px) rotateX(0) rotateY(0);
   }
-
   50% {
     -webkit-transform: perspective(120px) rotateX(-180.1deg) rotateY(0);
     transform: perspective(120px) rotateX(-180.1deg) rotateY(0);
   }
-
   100% {
     -webkit-transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
     transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
@@ -1969,12 +2081,10 @@ body {
     -webkit-transform: perspective(120px) rotateX(0) rotateY(0);
     transform: perspective(120px) rotateX(0) rotateY(0);
   }
-
   50% {
     -webkit-transform: perspective(120px) rotateX(-180.1deg) rotateY(0);
     transform: perspective(120px) rotateX(-180.1deg) rotateY(0);
   }
-
   100% {
     -webkit-transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
     transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
@@ -1982,11 +2092,11 @@ body {
 }
 
 @-webkit-keyframes sk-doubleBounce {
-  0%, 100% {
+  0%,
+  100% {
     -webkit-transform: scale(0);
     transform: scale(0);
   }
-
   50% {
     -webkit-transform: scale(1);
     transform: scale(1);
@@ -1994,11 +2104,11 @@ body {
 }
 
 @keyframes sk-doubleBounce {
-  0%, 100% {
+  0%,
+  100% {
     -webkit-transform: scale(0);
     transform: scale(0);
   }
-
   50% {
     -webkit-transform: scale(1);
     transform: scale(1);
@@ -2006,11 +2116,12 @@ body {
 }
 
 @-webkit-keyframes sk-waveStretchDelay {
-  0%, 100%, 40% {
+  0%,
+  100%,
+  40% {
     -webkit-transform: scaleY(0.4);
     transform: scaleY(0.4);
   }
-
   20% {
     -webkit-transform: scaleY(1);
     transform: scaleY(1);
@@ -2018,11 +2129,12 @@ body {
 }
 
 @keyframes sk-waveStretchDelay {
-  0%, 100%, 40% {
+  0%,
+  100%,
+  40% {
     -webkit-transform: scaleY(0.4);
     transform: scaleY(0.4);
   }
-
   20% {
     -webkit-transform: scaleY(1);
     transform: scaleY(1);
@@ -2034,22 +2146,18 @@ body {
     -webkit-transform: translateX(42px) rotate(-90deg) scale(0.5);
     transform: translateX(42px) rotate(-90deg) scale(0.5);
   }
-
   50% {
     -webkit-transform: translateX(42px) translateY(42px) rotate(-179deg);
     transform: translateX(42px) translateY(42px) rotate(-179deg);
   }
-
   50.1% {
     -webkit-transform: translateX(42px) translateY(42px) rotate(-180deg);
     transform: translateX(42px) translateY(42px) rotate(-180deg);
   }
-
   75% {
     -webkit-transform: translateX(0) translateY(42px) rotate(-270deg) scale(0.5);
     transform: translateX(0) translateY(42px) rotate(-270deg) scale(0.5);
   }
-
   100% {
     -webkit-transform: rotate(-360deg);
     transform: rotate(-360deg);
@@ -2061,22 +2169,18 @@ body {
     -webkit-transform: translateX(42px) rotate(-90deg) scale(0.5);
     transform: translateX(42px) rotate(-90deg) scale(0.5);
   }
-
   50% {
     -webkit-transform: translateX(42px) translateY(42px) rotate(-179deg);
     transform: translateX(42px) translateY(42px) rotate(-179deg);
   }
-
   50.1% {
     -webkit-transform: translateX(42px) translateY(42px) rotate(-180deg);
     transform: translateX(42px) translateY(42px) rotate(-180deg);
   }
-
   75% {
     -webkit-transform: translateX(0) translateY(42px) rotate(-270deg) scale(0.5);
     transform: translateX(0) translateY(42px) rotate(-270deg) scale(0.5);
   }
-
   100% {
     -webkit-transform: rotate(-360deg);
     transform: rotate(-360deg);
@@ -2088,7 +2192,6 @@ body {
     -webkit-transform: scale(0);
     transform: scale(0);
   }
-
   100% {
     -webkit-transform: scale(1);
     transform: scale(1);
@@ -2101,7 +2204,6 @@ body {
     -webkit-transform: scale(0);
     transform: scale(0);
   }
-
   100% {
     -webkit-transform: scale(1);
     transform: scale(1);
@@ -2124,11 +2226,11 @@ body {
 }
 
 @-webkit-keyframes sk-chasingDotsBounce {
-  0%, 100% {
+  0%,
+  100% {
     -webkit-transform: scale(0);
     transform: scale(0);
   }
-
   50% {
     -webkit-transform: scale(1);
     transform: scale(1);
@@ -2136,11 +2238,11 @@ body {
 }
 
 @keyframes sk-chasingDotsBounce {
-  0%, 100% {
+  0%,
+  100% {
     -webkit-transform: scale(0);
     transform: scale(0);
   }
-
   50% {
     -webkit-transform: scale(1);
     transform: scale(1);
@@ -2148,11 +2250,12 @@ body {
 }
 
 @-webkit-keyframes sk-threeBounceDelay {
-  0%, 100%, 80% {
+  0%,
+  100%,
+  80% {
     -webkit-transform: scale(0);
     transform: scale(0);
   }
-
   40% {
     -webkit-transform: scale(1);
     transform: scale(1);
@@ -2160,11 +2263,12 @@ body {
 }
 
 @keyframes sk-threeBounceDelay {
-  0%, 100%, 80% {
+  0%,
+  100%,
+  80% {
     -webkit-transform: scale(0);
     transform: scale(0);
   }
-
   40% {
     -webkit-transform: scale(1);
     transform: scale(1);
@@ -2172,11 +2276,12 @@ body {
 }
 
 @-webkit-keyframes sk-circleBounceDelay {
-  0%, 100%, 80% {
+  0%,
+  100%,
+  80% {
     -webkit-transform: scale(0);
     transform: scale(0);
   }
-
   40% {
     -webkit-transform: scale(1);
     transform: scale(1);
@@ -2184,11 +2289,12 @@ body {
 }
 
 @keyframes sk-circleBounceDelay {
-  0%, 100%, 80% {
+  0%,
+  100%,
+  80% {
     -webkit-transform: scale(0);
     transform: scale(0);
   }
-
   40% {
     -webkit-transform: scale(1);
     transform: scale(1);
@@ -2196,11 +2302,12 @@ body {
 }
 
 @-webkit-keyframes sk-cubeGridScaleDelay {
-  0%, 100%, 70% {
+  0%,
+  100%,
+  70% {
     -webkit-transform: scale3D(1, 1, 1);
     transform: scale3D(1, 1, 1);
   }
-
   35% {
     -webkit-transform: scale3D(0, 0, 1);
     transform: scale3D(0, 0, 1);
@@ -2208,11 +2315,12 @@ body {
 }
 
 @keyframes sk-cubeGridScaleDelay {
-  0%, 100%, 70% {
+  0%,
+  100%,
+  70% {
     -webkit-transform: scale3D(1, 1, 1);
     transform: scale3D(1, 1, 1);
   }
-
   35% {
     -webkit-transform: scale3D(0, 0, 1);
     transform: scale3D(0, 0, 1);
@@ -2224,7 +2332,6 @@ body {
     -webkit-transform: rotate(0);
     transform: rotate(0);
   }
-
   100% {
     -webkit-transform: rotate(360deg);
     transform: rotate(360deg);
@@ -2236,7 +2343,6 @@ body {
     -webkit-transform: rotate(0);
     transform: rotate(0);
   }
-
   100% {
     -webkit-transform: rotate(360deg);
     transform: rotate(360deg);
@@ -2244,25 +2350,26 @@ body {
 }
 
 @-webkit-keyframes sk-circleFadeDelay {
-  0%, 100%, 39% {
+  0%,
+  100%,
+  39% {
     opacity: 0;
   }
-
   40% {
     opacity: 1;
   }
 }
 
 @keyframes sk-circleFadeDelay {
-  0%, 100%, 39% {
+  0%,
+  100%,
+  39% {
     opacity: 0;
   }
-
   40% {
     opacity: 1;
   }
 }
-
 
 .landing-page {
   span.navy {
@@ -2299,7 +2406,7 @@ body {
     right: 0;
     left: 0;
     z-index: 200;
-    > .container {
+    >.container {
       padding-right: 0;
       padding-left: 0;
     }
@@ -2310,7 +2417,6 @@ body {
   }
   .navbar-default {
     &.navbar-scroll {
-      
       background-color: $primary-white;
       border-color: $primary-white;
       padding: 15px 0;
@@ -2319,7 +2425,6 @@ body {
         text-align: center;
       }
       .phone {
-        
         width: 400px;
         color: $dark-grey;
         padding-top: 20px;
@@ -2340,13 +2445,13 @@ body {
       font-size: 14px;
     }
   }
-  .navbar-nav > li > a {
+  .navbar-nav>li>a {
     padding-top: 25px;
     border-top: 6px solid transparent;
   }
   .navbar-default {
-    .navbar-nav > {
-      .active > a {
+    .navbar-nav> {
+      .active>a {
         background: 0 0;
         color: $primary-white;
         border-top: 6px solid $primary;
@@ -2356,25 +2461,25 @@ body {
           border-top: 6px solid $primary;
         }
       }
-      li > a {
-        &:focus, &:hover {
+      li>a {
+        &:focus,
+        &:hover {
           color: $primary;
           background: inherit;
         }
       }
-      .active > a:focus {
+      .active>a:focus {
         background: 0 0;
         color: $primary-white;
       }
     }
-    &.navbar-scroll .navbar-nav > .active > a:focus {
-      
+    &.navbar-scroll .navbar-nav>.active>a:focus {
       background: 0 0;
       color: inherit;
     }
-    
     .navbar-brand {
-      &:focus, &:hover {
+      &:focus,
+      &:hover {
         background: $primary;
         color: $primary-white;
       }
@@ -2387,7 +2492,6 @@ body {
       font-size: 14px;
       @include brand;
     }
-    
   }
   .navbar-scroll.navbar-default .nav li a {
     color: $dark-grey;
@@ -2395,24 +2499,22 @@ body {
       color: $primary;
     }
   }
-
-
   .navbar-wrapper .navbar.navbar-scroll {
     padding-top: 0;
     padding-bottom: 0;
     border-bottom: 1px solid $light-grey;
     border-radius: 0;
   }
-  .nav > li {
+  .nav>li {
     &.active {
       border: none;
       background: inherit;
     }
-    > a {
+    >a {
       padding: 25px 10px 15px;
     }
   }
-  .navbar-scroll .navbar-nav > li > a {
+  .navbar-scroll .navbar-nav>li>a {
     padding: 20px 10px;
   }
   .navbar-fixed-top {
@@ -2432,7 +2534,7 @@ body {
     height: 470px;
     width: 100%;
     background-position: 50% 0;
-    background-repeat:  no-repeat;
+    background-repeat: no-repeat;
   }
   .carousel {
     height: 470px;
@@ -2444,7 +2546,7 @@ body {
     height: 470px;
     background-color: $dark-grey;
   }
-  .carousel-inner > .item > img {
+  .carousel-inner>.item>img {
     position: absolute;
     top: 0;
     left: 0;
@@ -2460,13 +2562,15 @@ body {
       }
       .active {
         opacity: 1;
-        &.left, &.right {
+        &.left,
+        &.right {
           left: 0;
           opacity: 0;
           z-index: 1;
         }
       }
-      .next.left, .prev.right {
+      .next.left,
+      .prev.right {
         opacity: 1;
       }
     }
@@ -2475,7 +2579,8 @@ body {
     }
   }
   .carousel-control {
-    &.left, &.right {
+    &.left,
+    &.right {
       background: 0 0;
     }
     width: 6%;
@@ -2524,7 +2629,8 @@ body {
       color: inherit;
     }
   }
-  .features-block, .features-text {
+  .features-block,
+  .features-text {
     margin-top: 40px;
   }
   .features {
@@ -2547,9 +2653,7 @@ body {
     padding: 20px 0;
   }
   .gray-section {
-    background-image: url("../assets/img/topography.svg"),
-    linear-gradient(110deg, $primary, $primary-dark);
-    //background: $primary;
+    background-image: url("../assets/img/topography.svg"), linear-gradient(110deg, $primary, $primary-dark); //background: $primary;
     margin-top: 60px;
     color: $primary-white;
     p {
@@ -2612,20 +2716,27 @@ body {
       margin-right: 10px;
     }
   }
-  .btn-info.btn-outline:hover, .btn-primary.btn-outline:hover, .btn-success.btn-outline:hover, .btn-warning.btn-outline:hover {
+  .btn-info.btn-outline:hover,
+  .btn-primary.btn-outline:hover,
+  .btn-success.btn-outline:hover,
+  .btn-warning.btn-outline:hover {
     color: $primary-white;
   }
   .btn-primary {
     background-color: $primary;
     border-color: $primary;
     color: $primary-white;
-    &.active, &:active, &:focus, &:hover {
+    &.active,
+    &:active,
+    &:focus,
+    &:hover {
       background-color: $primary;
       border-color: $primary;
       color: $primary-white;
     }
     padding: 10px 20px;
-    &.active, &:active {
+    &.active,
+    &:active {
       background-image: none;
     }
     &.active[disabled] {
@@ -2635,7 +2746,9 @@ body {
     &[disabled] {
       background-color: $green;
       border-color: $green;
-      &:active, &:focus, &:hover {
+      &:active,
+      &:focus,
+      &:hover {
         background-color: $green;
         border-color: $green;
       }
@@ -2644,7 +2757,6 @@ body {
 }
 
 //===================== MEDIA =============================
-
 @media (min-width: 768px) {
   .landing-page {
     .navbar-wrapper {
@@ -2674,7 +2786,6 @@ body {
 }
 
 @media (max-width: 768px) {
-
   .landing-page {
     .carousel-caption {
       left: 5%;
@@ -2690,12 +2801,11 @@ body {
     .navbar.navbar-scroll .navbar-brand {
       margin-top: 6px;
     }
-
     .navbar-default {
       background-color: $primary-white;
       border-color: $primary-white;
       padding: 15px 0;
-      .navbar-nav > .active > a:focus {
+      .navbar-nav>.active>a:focus {
         background: 0 0;
         color: inherit;
       }
@@ -2704,7 +2814,7 @@ body {
         &:hover {
           color: $primary;
         }
-      }      
+      }
     }
     .navbar-wrapper .navbar {
       padding-top: 0;
@@ -2712,10 +2822,10 @@ body {
       border-bottom: 1px solid $light-grey;
       border-radius: 0;
     }
-    .nav > li > a {
+    .nav>li>a {
       padding: 25px 10px 15px;
     }
-    .navbar-nav > li > a {
+    .navbar-nav>li>a {
       padding: 20px 10px;
     }
     .navbar .navbar-brand {
@@ -2729,7 +2839,7 @@ body {
       padding-left: 15px;
       padding-right: 5px;
     }
-    .navbar-default .navbar-nav > .active > a {
+    .navbar-default .navbar-nav>.active>a {
       color: inherit;
       &:hover {
         color: inherit;
@@ -2748,8 +2858,6 @@ body {
       }
     }
   }
-
-  
 }
 
 @media only screen and (min-width: 768px) {
@@ -2867,7 +2975,8 @@ body {
 }
 
 @media (max-width: 767px) {
-  .menu-visible-lg, .menu-visible-md {
+  .menu-visible-lg,
+  .menu-visible-md {
     display: block !important;
   }
 }
@@ -2877,12 +2986,11 @@ body {
     display: block;
     float: none;
   }
-
   .header-back {
     height: 470px;
     width: 100%;
     background-position: 70% 100% !important;
-    background-repeat:  no-repeat;
+    background-repeat: no-repeat;
   }
 }
 
@@ -2892,10 +3000,10 @@ body {
     overflow: hidden;
     svg {
       fill: $dark-grey;
-    } 
+    }
   }
   #brand-wrapper {
-    display:flex;
+    display: flex;
     width: 70%;
     flex-wrap: wrap;
     #brand-button:nth-child(1) {
@@ -2905,5 +3013,4 @@ body {
       flex-basis: 100%;
     }
   }
-  
 }
