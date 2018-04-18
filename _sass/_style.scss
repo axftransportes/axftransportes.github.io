@@ -2739,6 +2739,8 @@ body {
       }
     }
   }
+
+  
 }
 
 @media only screen and (min-width: 768px) {
@@ -2865,6 +2867,13 @@ body {
   .top-navigation .navbar-header {
     display: block;
     float: none;
+  }
+
+  .header-back {
+    height: 470px;
+    width: 100%;
+    background-position: 70% 100% !important;
+    background-repeat:  no-repeat;
   }
 }
 
