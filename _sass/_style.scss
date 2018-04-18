@@ -71,10 +71,11 @@ h3, h4, h5 {
 #brand-wrapper {
   width: 360px;
   //border: 1px solid black;
+  white-space: nowrap;
   overflow: hidden; /* will contain if #first is longer than #second */
 }
 #brand-button {
-  width: 158px;
+  width: $brand_button_width;
    /* add this */
   //border: 1px solid rgb(38, 0, 255);
 }
@@ -95,6 +96,7 @@ h3, h4, h5 {
   @include brand;
 }
 .phone1 {
+  padding-top: 5px !important;
   padding-bottom: 0px !important;
 }
 
@@ -2313,7 +2315,7 @@ body {
       border-color: $primary-white;
       padding: 15px 0;
       .navbar-brand {
-        width: 150px;
+        width: $brand_button_width;
         text-align: center;
       }
       .phone {
@@ -2376,8 +2378,10 @@ body {
         background: $primary;
         color: $primary-white;
       }
+      white-space: nowrap;
+      overflow: hidden;
       background: $primary;
-      width: 160px;
+      width: $brand_button_width;
       margin-left: 20px;
       margin-right: 10px;
       font-size: 14px;
