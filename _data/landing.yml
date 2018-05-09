@@ -30,11 +30,11 @@
 #   tpl: skills.html
 #   css: team
 
-# - id: projects
-#   i18n: nav.projects
-#   name: Proyectos
-#   tpl: projects.html
-#   css: project
+- id: projects
+  i18n: nav.projects
+  name: Servicios
+  tpl: projects.html
+  css: project
 
 # - id: blog
 #   i18n: nav.blog
